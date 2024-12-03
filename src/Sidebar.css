@@ -1,0 +1,52 @@
+.sidebar {
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.room-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.room-list li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.room-list li.active {
+  background-color: #61dafb;
+  color: white;
+}
+
+.create-room-form {
+  display: flex;
+}
+
+.create-room-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.create-room-form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #61dafb;
+  cursor: pointer;
+} 

@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.login-container input {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.login-container button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+body.dark-mode {
+    background-color: #121212; /* 다크 모드 배경색 */
+    color: #ffffff; /* 다크 모드 글자색 */
+}
+
+.sidebar {
+    background-color: #1e1e1e; /* 사이드바 배경색 */
+}
+
+.sidebar h3 {
+    color: #ffffff; /* 사이드바 제목 색상 */
+}
+
+.room-list li {
+    background-color: #2a2a2a; /* 방 목록 배경색 */
+}
+
+.room-list li.active {
+    background-color: #61dafb; /* 활성 방 색상 */
+    color: black; /* 활성 방 글자색 */
+}
+
+.settings {
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+}
